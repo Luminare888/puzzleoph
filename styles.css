@@ -4,8 +4,9 @@ body {
     align-items: center;
     display: flex;
     height: 90vh;
+    width: 1050px;
     margin: 0;
-    background-color: #f0f0f0;
+    background-color: transparent;
 }
 
 .puzzle-container {
