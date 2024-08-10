@@ -68,8 +68,8 @@ body {
 
 .completion-message {
     position: fixed;
-    top: 58%;
-    left: 44%;
+    top: 50%;
+    left: 32%;
     transform: translate(-50%, -50%);
     background: url(https://i.imgur.com/rWhZLMB.png); 
     background-size: 100%; 
