@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.puzzle-container {
+    display: flex;
+    gap: 20px;
+    background: url(https://i.imgur.com/W8WvUvf.png);
+    height: 675px;
+    width: 802px;
+    padding: 0px;
+    background-size: 100%;
+}
+
+.puzzle-pieces {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 20px;
+    width: 200px;
+}
+
+.pieza {
+    width: 149px; /* Ajusta el tamaño según prefieras */
+    height: 160.5px;
+    cursor: grab;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.puzzle-board {
+    display: grid;
+    grid-template-columns: repeat(5, 149px); /* Dos columnas para las piezas */
+    grid-template-rows: repeat(3, 160.5px); /* Una fila para las piezas */
+    gap: 0;
+    margin-left: 27px;
+    margin-top: 158px;
+    height: 482px;
+    border: 2px solid #ccc;
+}
+
+
+.dropzone {
+    width: 149px;
+    height: 160.5px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 2px dashed #ccc;
+}
+
+.dropzone.over {
+    border-color: #ccc;
+    background-color: #fff;
+}
+
+.completion-message {
+    position: fixed;
+    top: 58%;
+    left: 44%;
+    transform: translate(-50%, -50%);
+    background: url(https://i.imgur.com/rWhZLMB.png); 
+    background-size: 100%; 
+    width: 645px; 
+    height: 154px;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 24px;
+    text-align: center;
+    z-index: 1000;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.encabezado {
+    background: url(https://i.imgur.com/hYbeWBH.png); 
+    background-size: 100%; 
+    width: 645px; 
+    height: 120px;
+    position: absolute;
+    display: none;
+    top: 100;
+}
